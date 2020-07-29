@@ -111,12 +111,12 @@
                 <div class="silex-element-content normal">
                     <h3>tél. : 09 54 41 90 29</h3>
                 </div>
-            </div><div data-silex-type="text-element" class="editable-style silex-id-1563375715832-24 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu style-hamburger-menu" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1595411682703_705 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1595411682703_705 nav {left: -9999px;}.hamburger-menu_1595411682703_705 nav ul {margin-top: 80px;}.hamburger-menu_1595411682703_705 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1595411682703_705.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1595411682703_705 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1595411682703_705.open .nav-container {}.hamburger-menu_1595411682703_705 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1595411682703_705 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+            </div><div data-silex-type="text-element" class="editable-style silex-id-1563375715832-24 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu style-hamburger-menu" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1596012225791_262 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1596012225791_262 nav {left: -9999px;}.hamburger-menu_1596012225791_262 nav ul {margin-top: 80px;}.hamburger-menu_1596012225791_262 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1596012225791_262.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1596012225791_262 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1596012225791_262.open .nav-container {}.hamburger-menu_1596012225791_262 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1596012225791_262 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1595411682703_705.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1595411682703_705 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1595411682703_705.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1595411682703_705.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1595411682703_705 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1595411682703_705.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1596012225791_262.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1596012225791_262 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1596012225791_262.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1596012225791_262.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1596012225791_262 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1596012225791_262.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1595411682703_705 closed">
+<div class="hamburger-menu_1596012225791_262 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -143,26 +143,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1595411682703_705').removeClass('open');
-    $('.hamburger-menu_1595411682703_705').addClass('closed');
+    $('.hamburger-menu_1596012225791_262').removeClass('open');
+    $('.hamburger-menu_1596012225791_262').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1595411682703_705').addClass('open');
-    $('.hamburger-menu_1595411682703_705').removeClass('closed');
+    $('.hamburger-menu_1596012225791_262').addClass('open');
+    $('.hamburger-menu_1596012225791_262').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1595411682703_705').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1596012225791_262').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1595411682703_705 .nav-container').css({
+    $('.hamburger-menu_1596012225791_262 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1595411682703_705 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1596012225791_262 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -182,12 +182,15 @@
     
 
 
+
+
+
 <div data-silex-type="container-element" class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable" style="">
         <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width 00" style="">
             <a href="./" data-silex-type="image-element" class="editable-style silex-id-1560980831167-6 image-element" style=""><img src="assets/excellence-kebab-logo.jpg" class="silex-element-content"></a>
             
         <div data-silex-type="text-element" class="editable-style text-element hide-on-mobile silex-id-1563195589129-0 page-menus paged-element navigation anchor-link style-sous-nav paged-element-visible" style="">
-                <div class="silex-element-content normal"><ul><li><a href="#anchor1" title="Menus">Menus</a></li><li><a href="#anchor2" title="assiettes" rel="" target="" type="" download="">Assiettes</a></li><li><a href="#anchor3" title="couscous">Salades</a></li><li><a href="#anchor4" title="couscous">COUSCOUS</a></li></ul><p></p><p><a href="#anchor5" title="salades"></a></p><p></p>
+                <div class="silex-element-content normal"><ul><li><a href="#anchor1" title="Menus">Menus</a></li><li><a href="#anchor2" title="assiettes">Assiettes</a></li><li><a href="#anchor3" title="couscous">Salades</a></li></ul><p></p><p><a href="#anchor5" title="salades"></a></p><p></p>
                 </div>
             </div><div data-silex-type="text-element" class="editable-style text-element hide-on-mobile silex-id-1563201604223-2 page-menus paged-element style-nav navigation paged-element-visible" style="">
                 <div class="silex-element-content normal">
@@ -261,7 +264,7 @@
 
         </div></div><div data-silex-type="container-element" class="prevent-resizable container-element editable-style silex-id-1561067352386-10 section-element page-menus paged-element style-bg-degrade paged-element-visible" style="">
         <div data-silex-type="container-element" class="editable-style silex-id-1561451143529-7 container-element hide-on-desktop" style=""></div>
-        <div data-silex-type="container-element" class="editable-style silex-id-1561067352168-9 container-element silex-element-content website-width" style="width: 1400px; min-height: 4007px; margin-left: auto; margin-right: auto;">
+        <div data-silex-type="container-element" class="editable-style silex-id-1561067352168-9 container-element silex-element-content website-width" style="width: 1400px; min-height: 3750px; margin-left: auto; margin-right: auto;">
             
             
             
@@ -459,7 +462,7 @@
 
 </b><p></p> <h3>
 
-</h3><h3>(SEUL :<u>&nbsp; 5,00€</u>, AVEC FRITE :<u>&nbsp; 6,50€</u>)</h3>
+</h3><h3>(SEUL :<u>&nbsp;5,00€</u>, AVEC FRITE :<u>&nbsp; 6,50€</u>)</h3>
 
 
 <p><b>
@@ -471,11 +474,11 @@
                 
                 
                 
-            <div data-silex-type="container-element" class="editable-style container-element silex-id-1595408735925-20" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561372074150-29 style-menu" style="left: 641px; width: 510px; min-height: 70px;">
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1595408735925-20" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561372074150-29 style-menu" style="">
                     <div class="silex-element-content normal">
                         <h2>Tacos *</h2>
                     </div>
-                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561372101053-31 style-menu" style="top: 85px; left: 580px; width: 210px; min-height: 169px;">
+                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561372101053-31 style-menu" style="">
                     <div class="silex-element-content normal">
                         <p>1 viande<br> + boisson<br> + frite
                         </p>
@@ -487,7 +490,8 @@
 
 </b>
 
-</p><p><b>9,00€</b></p>
+</p><p><b>9,00€</b><b><br></b>(SEUL :<u>&nbsp;7,50€</u>)</p><p><b>
+</b></p>
 
  
 
@@ -503,7 +507,7 @@
 
 </b>
 
-</p><p><b>12,00€</b></p>
+</p><p><b>12,00€<br></b>(SEUL :<u>&nbsp;10,00€</u>)</p>
 
  
 
@@ -511,7 +515,7 @@
 <p><b>
 </b></p>
                     </div>
-                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563203606928-5 style-menu" style="top: 85px; left: 1002px; width: 210px; min-height: 169px;">
+                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563203606928-5 style-menu" style="">
                     <div class="silex-element-content normal">
                         <p>3 viandes<br> + boisson<br> + frite
                         </p>
@@ -519,7 +523,11 @@
 
 </b>
 
-</p><p><b>14,00€</b><br></p>
+</p><p><b>14,00€<br></b>
+
+(SEUL :<u>&nbsp; 12,50€</u>)
+
+<br></p>
 
  
 
@@ -529,29 +537,10 @@
 <p><b>
 </b></p>
                     </div>
-                </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561377602115-49 fancy-border" style="">
-                
-                
-            <div data-silex-type="container-element" class="editable-style container-element silex-id-1595408784989-21" style="top: -23px; left: -22px; width: 588px; min-height: 306px;"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561377602116-50 style-menu" style="top: 44px; left: 641px; width: 510px; min-height: 188px;">
-                    <div class="silex-element-content normal">
-                        <h2>Soupe de lentille
-                        </h2>
-                        <p>(sur commande)
-                        </p>
-                        <p><b>
-
-
-
-<b>4,60€</b>
-
-
-
-</b></p>
-                    </div>
                 </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561377853788-55 fancy-border" style="">
                 
                 
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1561377853815-57 style-menu" style="left: 9px; width: 331px; min-height: 169px;">
+            <div data-silex-type="text-element" class="editable-style text-element silex-id-1561377853815-57 style-menu" style="left: 9px; width: 330px; min-height: 168px;">
                     <div class="silex-element-content normal">
                         <h2>Menu enfant
                         </h2>
@@ -565,7 +554,7 @@
 6,20€
 </b><br></p> 
                     </div>
-                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593250466520-0 style-menu" title="" style=""><div class="silex-element-content normal">
+                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593250466520-0 style-menu" title="" style="left: 317px; width: 318px; min-height: 199px;"><div class="silex-element-content normal">
                         <h2>Menu ÉTUDIAnT</h2>
                         <p>+ boisson
 
@@ -574,15 +563,15 @@
                         <p><b>
 
 
-7,50<b>€</b></b><br></p> 
-                    </div></div><div data-silex-type="text-element" class="editable-style silex-id-1563781401457-1 text-element style-bandeau-text-au-choix-r" style=""><div class="silex-element-content normal">
+7,50<b>€<br></b></b><u>( uniquement le midi )</u><br></p> 
+                    </div></div><div data-silex-type="text-element" class="editable-style silex-id-1563781401457-1 text-element style-bandeau-text-au-choix-r" style="top: 185px; left: 24px; width: 296px; min-height: 197px;"><div class="silex-element-content normal">
 
 
                     <h3>viandes<b> (au choix)</b></h3>
                     <p>Nuggets<br>Kebab <br>Mini durum</p>
                 
 
-</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563782438884-0 style-bandeau-text-au-choix-r" style=""><div class="silex-element-content normal">
+</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563782438884-0 style-bandeau-text-au-choix-r" style="top: 210px; left: 329px; width: 300px; min-height: 200px;"><div class="silex-element-content normal">
 
 
                     <h3>
@@ -601,34 +590,33 @@ tomates
 <br><br></p>
                 
 
-</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611782395-0 style-bandeau-text-au-choix-r" style="">
+</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611782395-0 style-bandeau-text-au-choix-r" style="top: 47px; left: 733px; width: 420px; min-height: 73px;">
                 <div class="silex-element-content normal">
                     <h3><u>Accompagnements</u></h3>
                     
                 </div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563781085422-0 style-menu" style="top: 112px; left: 688px; width: 505px; min-height: 72px;">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563781085422-0 style-menu" style="top: 112px; left: 688px; width: 505px; min-height: 71px;">
                 <div class="silex-element-content normal"><h3>SUPPLÉMENT fromages : cheddar<u>
 
 1,00€</u>, feta<u>
 
-1,50€</u>, chips<u><u>&nbsp;1,50€</u></u></h3></div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611793953-2 style-bandeau-text-au-choix-r" style="top: 185px; left: 1045px; width: 143px; min-height: 165px;">
+1,50€</u></h3></div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611793953-2 style-bandeau-text-au-choix-r" style="">
                 <div class="silex-element-content normal">
                     <h3>Bulgur</h3>
                     <p>
-                        Petite: <i>5,00€</i><br> Grande: <i>7,00€</i>
+                        Petite (375g) :<br><i>5,00€</i><br> Grande (500g) : <br><i>7,00€</i>
                     </p>
                 </div>
-            </div><div data-silex-type="container-element" class="editable-style silex-id-1563612244550-3 container-element hide-on-mobile" style="top: 31px; left: 653px; width: 20px; min-height: 341px;"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611788162-1 style-bandeau-text-au-choix-r" style="top: 185px; left: 885px; width: 140px; min-height: 164px;">
+            </div><div data-silex-type="container-element" class="editable-style silex-id-1563612244550-3 container-element hide-on-mobile" style="top: 31px; left: 653px; width: 20px; min-height: 340px;"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611788162-1 style-bandeau-text-au-choix-r" style="">
                 <div class="silex-element-content normal">
                     <h3>Frites</h3>
-                    <p>Petite: <i>3,00€</i>
-                        <br>Moyenne: <i>5,00€</i><br> Grande: <i>7,00€</i></p>
+                    <p>Petite (375g) : <br><i>3,00€</i>
+                        <br>Moyenne (500g) : <br><i>5,00€</i><br> Grande assiette : <br><i>8,00€</i></p>
                 </div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593251478066-6 style-bandeau-text-au-choix-r" title="" style="top: 185px; left: 684px; width: 177px; min-height: 164px;"><div class="silex-element-content normal">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593251478066-6 style-bandeau-text-au-choix-r" title="" style=""><div class="silex-element-content normal">
                     <h3>Viandes</h3>
-                    <p>Petite 250g: <i>3,50€</i>
-                        <br>Moyenne 375g: <i>5,00€</i><br> Grande 500g: <i>7,00€</i></p>
+                    <p>Moyenne (375g) : <br><i>5,00€</i><br> Grande (500g) :<br><i>7,00€</i></p>
                 </div></div></div></div>
     </div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561379153949-61 page-menus paged-element header style-bandeau-text-header paged-element-visible" style="">
 
@@ -697,7 +685,7 @@ tomates
                         <div class="silex-element-content normal">
                             <p>(accompagnement : salade, frites ou bulgur)</p>
                         </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563268246495-33" style=""></div><div data-silex-type="container-element" class="editable-style container-element hide-on-desktop silex-id-1561451368866-9" style=""></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561385332812-102 1" style="">
+                    </div></div><div data-silex-type="container-element" class="editable-style container-element hide-on-desktop silex-id-1561451368866-9" style=""></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561385332812-102 1" style="">
                     <div data-silex-type="text-element" class="editable-style text-element silex-id-1561385332812-103 style-lignes-sandwitchs" style="">
                         <div class="silex-element-content normal">
 
@@ -770,20 +758,7 @@ tomates
                     
 
 </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563266522707-23 style-bg-ligne-deg-beige" style="">
-                    
-                    
-                <div data-silex-type="text-element" class="editable-style text-element silex-id-1563266522708-24 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-
-
-                        <h2><b>Côtelettes d'agneau x2........... </b><u>
-
-11,00€</u><br></h2>
-                    
-
-</div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563266436946-19 1" style="">
+                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563266436946-19 1 style-bg-ligne-deg-beige" style="">
                     
                     
                 <div data-silex-type="text-element" class="editable-style text-element silex-id-1563266436946-20 style-lignes-sandwitchs" style="">
@@ -797,7 +772,7 @@ tomates
                     
 
 </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563266948784-27 style-bg-ligne-deg-beige" style="">
+                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563266948784-27" style="">
                     
                     
                 <div data-silex-type="text-element" class="editable-style text-element silex-id-1563266948785-28 00 style-lignes-sandwitchs" style="">
@@ -811,7 +786,7 @@ tomates
                     
 
 </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563267985786-31 1" style="">
+                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563267985786-31 1 style-bg-ligne-deg-beige" style="">
                     
                     
                 <div data-silex-type="text-element" class="editable-style text-element silex-id-1563267985786-32 style-lignes-sandwitchs" style="">
@@ -829,14 +804,27 @@ tomates
 
 
 </div>
-                    </div></div></div>
-    </div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561386111960-124 page-menus paged-element header style-bandeau-text-header paged-element-visible" style="">
+                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563268246495-33" style=""></div></div>
+    </div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1563374222885-17 page-menus paged-element paged-element-visible" style="">
 
-        <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1561386111960-125" style="">
+        
+    <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1563374222885-18" style="">
 
 
-        </div>
-    </div><div data-silex-type="container-element" class="prevent-resizable container-element editable-style section-element silex-id-1563374221632-2 page-menus paged-element paged-element-visible" style="">
+        </div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1593519753386-3 page-menus paged-element paged-element-visible" title="" style="width: 1774px; min-height: 375px;"><div data-silex-type="container-element" class="editable-style container-element silex-id-1593519753386-4 website-width" title="" style="width: 1400px; min-height: 375px;"><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-5 style-bandeau-text-au-choix" title="" style="top: 14px; left: 354px; width: 653px; min-height: 62px;"><div class="silex-element-content normal">
+                    <h3><u>Les assiettes sont accompagnées</u></h3>
+                    <h3><br></h3>
+                </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-6 style-bandeau-text-au-choix" title="" style=""><div class="silex-element-content normal"><p>Salades<br>Frites<br>Bulgur + 1 €<br>Végétarien 4€<br>Durum végétarien 5€<br>Belge 4€</p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-7 style-bandeau-text-au-choix" title="" style=""><div class="silex-element-content normal">
+                    <h3>Nos crudités</h3>
+                    <p>
+                        Salade<br>Tomates<br>Oignons<br>Choux rouge /blanc<br>Concombre<br>Mais<br>Carottes</p>
+                </div></div></div></div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1564068108020-0 page-menus paged-element paged-element-visible" style="">
+
+        
+    <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1564068108020-1" style="">
+
+
+        </div></div><div data-silex-type="container-element" class="prevent-resizable container-element editable-style section-element silex-id-1563374221632-2 page-menus paged-element paged-element-visible" style="">
         
         
     <div data-silex-type="container-element" class="editable-style container-element hide-on-desktop silex-id-1563374221633-3" style=""></div><div data-silex-type="container-element" class="editable-style container-element silex-element-content website-width silex-id-1563374221800-4" style="">
@@ -889,108 +877,7 @@ Salade
                     
 
 </div>
-                    </div></div></div></div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1563374222885-17 page-menus paged-element paged-element-visible" style="">
-
-        
-    <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1563374222885-18" style="">
-
-
-        </div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1593519753386-3 page-menus paged-element paged-element-visible" title="" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1593519753386-4 website-width" title="" style="width: 1400px; min-height: 375px;"><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-5 style-bandeau-text-au-choix" title="" style="top: 14px; left: 354px; width: 653px; min-height: 62px;"><div class="silex-element-content normal">
-                    <h3><u>Les assiettes sont accompagnées</u></h3>
-                    <h3><br></h3>
-                </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-6 style-bandeau-text-au-choix" title="" style="top: 74px; left: 260px; width: 441px; min-height: 284px;"><div class="silex-element-content normal"><p>Salades<br>Frites<br>Bulgur + 1 €<br>Végétarien 4€<br>Durum végétarien 5€<br>Belge 4€<br><br></p><p>
-                    </p><p>
-                    </p><p><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-7 style-bandeau-text-au-choix" title="" style="top: 74px; left: 733px; width: 438px; min-height: 359px;"><div class="silex-element-content normal">
-                    <h3>Nos crudités</h3>
-                    <p>
-                        Salade<br>Tomates<br>Oignons<br>Choux rouge /blanc<br>Concombre<br>Mais<br>Carottes<br></p>
-                    <p><br></p>
-                </div></div></div></div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1564068108020-0 page-menus paged-element paged-element-visible" style="">
-
-        
-    <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1564068108020-1" style="">
-
-
-        </div></div><div data-silex-type="container-element" class="prevent-resizable container-element editable-style silex-id-1561379491993-67 section-element page-menus paged-element paged-element-visible" style="">
-        <div data-silex-type="container-element" class="editable-style container-element hide-on-desktop silex-id-1561451343627-8" style=""></div>
-        <div data-silex-type="container-element" class="editable-style silex-id-1561379491794-66 container-element silex-element-content website-width margin40 style-margin40" style="">
-            
-            
-            
-            
-        <div data-silex-type="container-element" class="editable-style container-element silex-id-1561382473255-80 anchor4" style="">
-                
-                
-                
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1561382473255-81 style-titres 00" style="">
-                    <div class="silex-element-content normal">
-                        <h2>Couscous**</h2>
-                    </div>
-                </div><div data-silex-type="container-element" class="editable-style container-element menu-section-titre silex-id-1561382473363-82" style="top: 58px; width: 1400px; min-height: 2px; border-top-width: 3px;"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563204376316-24 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-                            <p>Composez votre couscous à votre goût !</p>
-                        </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563205437892-33" style=""></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561383673379-86 1" style="">
-                    
-                <div data-silex-type="text-element" class="editable-style text-element silex-id-1561383673379-87 00 style-lignes-sandwitchs" style="left: 46px; width: 900px; min-height: 85px;">
-                        <div class="silex-element-content normal">
-                            <h2><b></b>
-
-</h2><h2><b>SEMOULE ET SAUCE........... </b><u>7,40€</u></h2>
-                            
-                        </div>
-                    </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563204525108-25 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-                            <p><i>Viandes en suppléments :</i><br></p><i>
-                        </i></div>
-                    </div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563787402962-1 1" style="">
-                
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1563787402962-2 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-                            <h2><b></b>
-
-</h2><h2><b>MERGUEZ X2........... </b><u>4,00€</u></h2>
-                            
-                        </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561384423994-89 1 style-bg-ligne-deg-beige" style="">
-                
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1563204871166-28 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-                            <h2><b></b>
-
-</h2><h2><b>BROCHETTE DE POULET........... </b><u>3,40€</u></h2>
-                            
-                        </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563205818103-34 1" style="">
-                
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1563205818104-35 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-                            <h2><b></b>
-
-</h2><h2><b>BOULETTES X2........... </b><u>4,00€</u></h2>
-                            
-                        </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563205939230-40 1 style-bg-ligne-deg-beige" style="">
-                
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1563205939230-41 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-                            <h2><b></b>
-
-</h2><h2><b>BROCHETTE D' AGNEAU........... </b><u>3,60€</u></h2>
-                            
-                        </div>
-                    </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1563205939739-42 1" style="">
-                
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1563205939739-43 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal">
-
-<h2><b>GIGOT D'AGNEAU........... </b><u>4,80€</u></h2>
-
-</div>
-                    </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563206360467-44 00 style-lignes-sandwitchs" style="">
-                        <div class="silex-element-content normal"><p>**couscous uniquement sur commande&nbsp;</p><p>jeudi vendredi samedi et dimanche (possibilité de livraison)</p></div>
-                    </div></div>
-    </div><div data-silex-type="container-element" class="editable-style section-element silex-id-1593519753387-8 header style-bandeau-text-header" title=""></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1594397039389-4 page-menus paged-element paged-element-visible" title="" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1594397039389-5 website-width" title=""></div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1594396907193-2 header style-bandeau-text-header page-menus paged-element paged-element-visible" title="" style=""></div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561386112277-127 header style-bandeau-text-header page-menus paged-element paged-element-visible" style="">
+                    </div></div></div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1593519753387-8 header style-bandeau-text-header" title=""></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1594397039389-4 page-menus paged-element paged-element-visible" title="" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1594397039389-5 website-width" title=""></div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1594396907193-2 header style-bandeau-text-header page-menus paged-element paged-element-visible" title="" style=""></div><div data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561386112277-127 header style-bandeau-text-header page-menus paged-element paged-element-visible" style="">
 
         <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1561386112278-128" style="">
 
@@ -1012,15 +899,23 @@ Salade
             </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561386112323-130 style-bandeau-text-au-choix" style="">
                 <div class="silex-element-content normal">
                     <h3>Frites</h3>
-                    <p>Petites: 2,80€
-                        <br>Moyennes: 4,20€<br> Grandes: 6,20€</p>
+                    <p>
+
+Petite (375g) : <br>3,00€
+                        <br>Moyenne (500g) : <br>5,00€<br> Grande assiette : <br>8,00€
+
+</p>
                     <p><br></p>
                 </div>
             </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561387416978-135 style-bandeau-text-au-choix" style="">
                 <div class="silex-element-content normal">
                     <h3>Bulgur</h3>
                     <p>
-                        Petites: 3,80€<br> Grandes: 6,20€
+                        
+
+Petite (375g) :<br>5,00€<br> Grande (500g) : <br>7,00€
+
+
                     </p>
                 </div>
             </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563374977217-23 style-bandeau-text-au-choix" style="">
@@ -1067,6 +962,4 @@ Salade
                 </div>
             </div>
         </div>
-    </div>
-
-</body></html>
+    </div></body></html>
