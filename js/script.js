@@ -1,7 +1,7 @@
 
 
     window.silex = window.silex || {}
-    window.silex.data = {"site":{"width":1400},"pages":[{"id":"accueil","displayName":"Accueil","link":{"linkType":"LinkTypePage","href":"#!page-accueil"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"menus","displayName":"Menus","link":{"linkType":"LinkTypePage","href":"#!page-menus"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
+    window.silex.data = {"site":{"width":1400},"pages":[{"id":"page-accueil","displayName":"Accueil","link":{"linkType":"LinkTypePage","href":"#!page-accueil"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-menus","displayName":"Menus","link":{"linkType":"LinkTypePage","href":"#!page-menus"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
 
         /*
          * active menu widget for Silex
